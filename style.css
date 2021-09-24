@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body {
     display: flex;
     flex-direction: column;
@@ -12,7 +13,7 @@ body {
 
 header {
     height: 70px;
-    box-shadow: 0 0 10px #0004 ;
+    box-shadow: 0 0 10px #0004;
 }
 
 main {
@@ -29,7 +30,7 @@ footer {
 }
 
 p {
-    color:#fff;
+    color: #fff;
 }
 
 .card {
@@ -40,6 +41,7 @@ p {
 
 .card img {
     width: 100%;
+    display: grid;
 }
 
 .price {
@@ -75,4 +77,19 @@ p {
 
 .description-container p {
     color: #555555;
+}
+
+@media (max-width: 800px) {
+    main {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
 }
